@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    border: none;
+    color: white;
+}
+html{
+    font-size: 62.5%;
+     /* overflow: hidden;  */
+    transition: 0.3s all ease-in-out;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #2f2f2f;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header .sticky{
+    border-bottom: .1rem solid rbga(0, 0, 0, .2);
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: default;
+    margin-left: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    margin: 10px;
+}
+.navbar a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 4rem;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a .active{
+    color: lightgray;
+}
+#menubar{
+    display: none; 
+    font-size: 3.2rem;
+}
+.Home{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+.home-content h3{
+ font-size: 3.2rem;
+ font-weight: 400;
+ margin: 25px 0;
+}
+.home-content h3 span{
+    color: pink;
+}
+.home-content h1{
+    font-size: 4.4rem;
+}
+.home-content p{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.social-media{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.social-media a{
+    font-size: 2.4rem;
+    margin-right: 15px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+}
+.btn {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid white;
+    box-shadow: 7px 6px 2px rgb(101, 101, 104);
+    border-radius: 50px;
+     color: black;
+    background:wheat;
+}
+.btn:hover{
+    background: lightblue;
+    color: black;
+}
+.home-img img{
+    border: 1px solid #2f2f2f;
+  box-shadow: 10px 10px 10px rgb(103, 126, 134) 10px;
+  animation: anime 4s ease-in-out infinite;
+}
+@keyframes anime {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.About{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    margin: 30px 30px 30px 20;
+    background: #272323;
+
+}
+.heading{
+   
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2.6rem;
+    color: lightcoral;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 10px 0 3rem 0;
+    line-height: 1.3;
+}
+.about-content h2 span{
+    margin-left: 10px;
+}
+.Services h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.sevices-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    gap: 30px;
+    /* background: red; */
+}
+.sevices-content .card{
+   flex: 1 1 30rem;
+   padding: 3rem 2rem 4rem;
+   text-align: center;
+   border-radius: 20px;
+   border: 2px solid #272323c3;
+   background: #272323c3;
+   transition: 0.5s ease-in-out;
+}
+.sevices-content .card:hover{
+    border-color: white;
+    transform: scale(1.02);
+}
+.Services .card i{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.card h3{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 200;
+    margin-bottom: 5px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.button{
+    color: black;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 10px;
+    background: lightblue;
+}
+.Skills{
+    background:#272323; 
+    transition: 0.5s ease-in-out;
+    /* min-height: 120vh; */
+}
+.Skills h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.skills-box img{
+ width: 100%;
+ /* height: 250px; */
+ margin: 30px;
+ margin-top: 50px;
+ transition: 0.5 ease;
+}
+.skills-box:hover img{
+    transform: scale(1.1);
+}
+.skills-content .skills-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #272323;
+    overflow: hidden;
+    display: flex;
+}
+.skills-box .skills-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease-in-out;
+}
+.skills-box:hover .skills-layer{
+    transform: translateY(0);
+}
+.skills-layer h4{
+    font-size: 3rem;
+    color: black;
+}
+.skills-layer p{
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem;
+    color: black;
+}
+.skills-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: #272323;
+    border-radius: 50%;
+}
+.skills-layer a i{
+    font-size: 20px;
+}
+.Contact h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+ .Contact form{
+ max-width: 70rem;
+ margin: 1rem auto;
+ text-align: center;
+ margin-bottom: 3rem;
+ margin-top: 50px;
+
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+.input-group input{
+    padding: 10px;
+    color: black;
+    width: 46%;
+
+}
+.input-group ::placeholder{
+    color: black;
+}
+.Contact form textarea{
+    width: 100%;
+    
+    color: black;
+    padding: 10px 0 0 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.Contact form textarea::placeholder{
+    color: black;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #272323;
+    padding: 10px;
+}
+.footer-text p{
+    font-size: 3rem;
+    letter-spacing: 1.2px;
+}
+ 
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 991px){
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+    .header{
+        padding: 2rem 3%;
+    }
+}
